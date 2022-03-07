@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script type="text/javascript" src="js/index.js"></script>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -33,14 +34,14 @@
 
 
                             <div class="form-group">
-                              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="First name">
+                              <input required type="text" class="form-control" id="formGroupExampleInput" placeholder="First name">
                             </div>
 
                           </div>
                           <div class="col-md-6 mb-4 pb-2">
 
                             <div class="form-group">
-                              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Last name">
+                              <input required type="text" class="form-control" id="formGroupExampleInput" placeholder="Last name">
                             </div>
 
                           </div>
@@ -50,11 +51,11 @@
 
                         <div class="mb-4 pb-2">
                           <label for="birthday">Date of Birth : </label>
-                          <input type="date" id="birthday" name="birthday">
+                          <input required type="date" id="birthday" name="birthday" class="form-control">
                         </div>
 
                         <div class="mb-4 pb-2">
-                          <select class="custom-select">
+                          <select class="custom-select" required>
                             <option selected>Gender</option>
                             <option value="1">Male</option>
                             <option value="2">Female</option>
@@ -62,46 +63,16 @@
                           </select>
                         </div>
 
-                       <!--  <div class="mb-4 pb-2">
-                          <div class="form-outline">
-                            <input type="text" id="form3Examplev4" class="form-control form-control-lg" />
-                            <label class="form-label" for="form3Examplev4">University Email Address</label>
-                          </div>
-                        </div>
-
-                        <div class="mb-4 pb-2">
-                          <div class="form-outline">
-                            <input type="text" id="programname" class="form-control form-control-lg" />
-                            <label class="form-label" for="programname">University Program Name</label>
-                          </div>
-                        </div>
-
-                         <div class="d-flex flex-row align-items-center mb-4">
-                            <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
-                            <div class="form-outline flex-fill mb-0">
-                              <input type="password" id="form3Example4c" class="form-control" />
-                              <label class="form-label" for="form3Example4c">Password</label>
-                            </div>
-                          </div> -->
-
-                   <!--        <div class="d-flex flex-row align-items-center">
-                            <i class="fas fa-key fa-lg me-3 fa-fw"></i>
-                            <div class="form-outline flex-fill">
-                              <input type="password" id="form3Example4cd" class="form-control" />
-                              <label class="form-label" for="form3Example4cd">Repeat your password</label>
-                            </div>
-                          </div> -->
-
                         <div class="form-group">
-                          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="University Email Address">
+                          <input required type="text" class="form-control" id="formGroupExampleInput" placeholder="University Email Address">
                         </div>
 
                         <div class="form-group">
-                          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="University Program Name">
+                          <input required type="text" class="form-control" id="formGroupExampleInput" placeholder="University Program Name">
                         </div>
 
                         <div class="form-group">
-                          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Password">
+                          <input required type="text" class="form-control" id="formGroupExampleInput" placeholder="Password">
                         </div>
 
                       </div>
@@ -111,7 +82,7 @@
                         <h3 class="fw-normal mb-5">Personal Preferences</h3>
 
                         <div class="form-group">
-                          <select class="custom-select">
+                          <select class="custom-select" required>
                             <option selected>Nationality</option>
                             <option value="1">Australian</option>
                             <option value="2">Chinese</option>
@@ -123,7 +94,7 @@
                         </div>
 
                         <div class="form-group">
-                          <select class="custom-select">
+                          <select class="custom-select" required>
                             <option selected>Dietary Options</option>
                             <option value="1">Vegetarian</option>
                             <option value="2">Vegan</option>
@@ -135,12 +106,11 @@
                         </div>
 
                          <div class="form-group">
-                          <!-- <label for="formGroupExampleInput">Language spoke</label> -->
-                          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Language spoke">
+                          <input required type="text" class="form-control" id="formGroupExampleInput" placeholder="Language spoke">
                         </div>
 
                         <div class="form-group">
-                          <select class="custom-select">
+                          <select class="custom-select" required>
                             <option selected>Shared occupancy Preferences?</option>
                             <option value="1">Single Bed</option>
                             <option value="2">Double Bed</option>
@@ -149,7 +119,7 @@
                         </div>
 
                         <div class="form-group">
-                          <select class="custom-select">
+                          <select class="custom-select" required>
                             <option selected>Pet Preferences</option>
                             <option value="1">Comfortable with pets</option>
                             <option value="2">Do not want pets</option>
@@ -157,69 +127,38 @@
                         </div>
 
                         <div class="form-group">
-                          <select class="custom-select">
+                          <select class="custom-select" required>
                             <option selected>Smoking habits</option>
                             <option value="1">Socially</option>
                             <option value="2">Occasionally</option>
                             <option value="3">Regularly</option>
+                            <option value="3">Don't Smoke</option>
                           </select>
                         </div>
 
                         <div class="form-group">
-                          <select class="custom-select">
+                          <select class="custom-select" required>
                             <option selected>Drinking habits</option>
                             <option value="1">Socially</option>
                             <option value="2">Occasionally</option>
                             <option value="3">Regularly</option>
+                            <option value="3">Don't drink</option>
                           </select>
                         </div>
-
-                       <!--  <div class="mb-4 pb-2">
-                          <div class="form-outline form-white">
-                            <input type="text" id="form3Examplea6" class="form-control form-control-lg" />
-                            <label class="form-label" for="form3Examplea6">Country</label>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <div class="col-md-5 mb-4 pb-2">
-
-                            <div class="form-outline form-white">
-                              <input type="text" id="form3Examplea7" class="form-control form-control-lg" />
-                              <label class="form-label" for="form3Examplea7">Code +</label>
-                            </div>
-
-                          </div>
-                          <div class="col-md-7 mb-4 pb-2">
-
-                            <div class="form-outline form-white">
-                              <input type="text" id="form3Examplea8" class="form-control form-control-lg" />
-                              <label class="form-label" for="form3Examplea8">Phone Number</label>
-                            </div>
-
-                          </div>
-                        </div>
-
-                        <div class="mb-4">
-                          <div class="form-outline form-white">
-                            <input type="text" id="form3Examplea9" class="form-control form-control-lg" />
-                            <label class="form-label" for="form3Examplea9">Your Email</label>
-                          </div>
-                        </div>
- -->
                         <div class="form-check d-flex justify-content-start mb-4 pb-3">
                           <input
                             class="form-check-input me-3"
                             type="checkbox"
                             value=""
                             id="form2Example3c"
+                            required
                           />
-                          <label class="form-check-label text-white" for="form2Example3">
+                          <label class="form-check-label text-white" for="form2Example3" required>
                             I do accept the <a href="#!" class="text-white"><u>Terms and Conditions</u></a> of your site.
                           </label>
                         </div>
 
-                        <button type="button" class="btn btn-light btn-lg" data-mdb-ripple-color="dark">Register</button>
+                        <button id="register" type="button" class="btn btn-light btn-lg" data-mdb-ripple-color="dark">Register</button>
 
                       </div>
                     </div>

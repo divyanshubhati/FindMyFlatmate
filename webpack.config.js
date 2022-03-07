@@ -98,7 +98,19 @@ const config = {
   ],
   devServer: {
     contentBase: path.join(__dirname, 'src'),
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8080',
+        secure: false,
+      },
+    },
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': '*',
+      'Access-Control-Allow-Methods': '*',
+    },
   },
+
   optimization: {
     runtimeChunk: 'single',
     splitChunks: {
